@@ -22,7 +22,7 @@ jobs:
       run: |
         curl https://cdn.shiftleft.io/download/sl > ${GITHUB_WORKSPACE}/sl && chmod a+rx ${GITHUB_WORKSPACE}/sl
     - name: NextGen Static Analysis
-      run: ${GITHUB_WORKSPACE}/sl analyze --wait --app MB-Python-Test3 --tag branch=${{ github.head_ref }} --remediation-config remediation.yaml --python .
+      run: ${GITHUB_WORKSPACE}/sl analyze --wait --app MB-Python-Test3 --remediation-config remediation.yaml --tag branch=${{ github.head_ref }} --remediation-config remediation.yaml --python .
       env:
         SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
         #SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
