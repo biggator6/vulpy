@@ -2,14 +2,14 @@ ngsast:
 - app:
     name: MB-Python-Test3
     modify-findings:
-      - downgrade_XSS
+      - downgrade_sqli
 
 finding-modifications:
   downgrade_sqli:
     # Use filter to specify the category
     filter:
       category:
-        - XSS
+        - SQL Injection
     # Specify the value for the tags, such as cvss_score or severity, that you would like to use
     # Optionally, you can add a custom tag (e.g, a tag indicating the reason a vuln is
     # marked as such)
