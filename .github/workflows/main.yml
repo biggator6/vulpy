@@ -25,5 +25,6 @@ jobs:
       run: ${GITHUB_WORKSPACE}/sl analyze --wait --app MB-Python-Test3 --tag branch=${{ github.head_ref }} --python .
       env:
         SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
-        #SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}# This is a basic workflow to help you get started with Actions
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+	- name: NextGen Remediation
+	  run: ${GITHUB_WORKSPACE}/sl remediation --config remediation.yaml --app MB-Python-Test3
