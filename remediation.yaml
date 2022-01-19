@@ -1,5 +1,5 @@
 # Example analysis remediation config
-# methods:
+ methods:
 # - method: org.slf4j.Logger.info:void(java.lang.String,java.lang.Object)
 #   tags:
 #     - key: category
