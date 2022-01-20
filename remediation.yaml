@@ -7,4 +7,4 @@
  - pattern: Logger.debug
    tags:
      - key: category
-       value: Sensitive Data Leak
+       value: Sensitive Data Usage
